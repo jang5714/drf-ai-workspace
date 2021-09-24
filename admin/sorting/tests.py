@@ -17,7 +17,7 @@ class TestMySum(unittest.TestCase):
 
     def test_reverse_str(self):
         ints = Palindrome()
-        ints.input_string = "helleh"
+        ints.input_string = "hellow"
         res3 = ints.reverse_string()
         res2 = ints.str_to_list()
         print(f'reverse : {res3}')
