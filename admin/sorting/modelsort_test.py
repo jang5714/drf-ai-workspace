@@ -1,6 +1,7 @@
 import unittest
 
 from admin.sorting.modelssort import Sorting
+from admin.sorting.merge_practis import Merge_prac
 
 class TestSort(unittest.TestCase):
 
@@ -19,6 +20,14 @@ class TestSort(unittest.TestCase):
         arr = [9, 8, 7, 6, 5, 4, 3, 2, 1]
         arr = Sorting.quick_sort(arr)
         self.assertEqual(arr, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+class TestMerge(unittest.TestCase):
+
+    def test_merge_prac(self):
+        arr= [-1, 5, 3, 4, 0]
+        arr= Merge_prac.merge_prac(arr)
+        print(arr)
+        self.assertEqual(arr, [-1, 0, 3, 4, 5])
 
 if __name__ == '__main__':
     unittest.main()
